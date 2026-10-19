@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "release": "v0.1.0",
+  "dependencies": [
+    {
+      "packageName": "@zof-ai/evidence-spec",
+      "version": "0.1.0",
+      "repository": "zof-evidence-spec",
+      "artifact": "zof-ai-evidence-spec-0.1.0.tgz",
+      "url": "https://github.com/Zof-AI/zof-evidence-spec/releases/download/v0.1.0/zof-ai-evidence-spec-0.1.0.tgz",
+      "sha256": "57f0fbaf210f9f8951291e2490581def1d808826807b819cf146d046e88e6bb8",
+      "sizeBytes": 22912
+    },
+    {
+      "packageName": "@zof-ai/failure-lab",
+      "version": "0.1.0",
+      "repository": "zof-failure-lab",
+      "artifact": "zof-ai-failure-lab-0.1.0.tgz",
+      "url": "https://github.com/Zof-AI/zof-failure-lab/releases/download/v0.1.0/zof-ai-failure-lab-0.1.0.tgz",
+      "sha256": "1fb09058ca5f4e97c296227e1f5f1061bb50d1469a1a80e2a5dc4ba11d9e902b",
+      "sizeBytes": 12499
+    },
+    {
+      "packageName": "@zof-ai/reliability-bench",
+      "version": "0.1.0",
+      "repository": "zof-reliability-bench",
+      "artifact": "zof-ai-reliability-bench-0.1.0.tgz",
+      "url": "https://github.com/Zof-AI/zof-reliability-bench/releases/download/v0.1.0/zof-ai-reliability-bench-0.1.0.tgz",
+      "sha256": "c36d7e68857870408c5a4faf62397ebfbeed43bed97b0fa9b9cb8ede91198746",
+      "sizeBytes": 10810
+    }
+  ]
+}
