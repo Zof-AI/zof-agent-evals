@@ -1,6 +1,6 @@
 import { execFile,spawn } from 'node:child_process';import { promisify,isDeepStrictEqual } from 'node:util';import { mkdtemp,writeFile,rm,mkdir } from 'node:fs/promises';import { tmpdir } from 'node:os';import path from 'node:path';import { randomUUID } from 'node:crypto';
-import { createEvidence,safeReadFile,assertBounded,parseJson,redactText } from '@zof-ai/evidence-spec';import type {Evidence,JsonValue} from '@zof-ai/evidence-spec';
-import {getEvaluationTask} from '@zof-ai/reliability-bench';import type {EvaluationTask} from '@zof-ai/reliability-bench';
+import { createEvidence,safeReadFile,assertBounded,parseJson,redactText } from '@zofai/evidence-spec';import type {Evidence,JsonValue} from '@zofai/evidence-spec';
+import {getEvaluationTask} from '@zofai/reliability-bench';import type {EvaluationTask} from '@zofai/reliability-bench';
 export const SANDBOX_IMAGE='node@sha256:43ac6c60b8f89723f746e8a92ce91abd5017e627ce1ddfe4238355d3a30b772c';
 const exec=promisify(execFile);const MAX_SOURCE_BYTES=128*1024;const MAX_OUTPUT_BYTES=64*1024;
 export interface EvaluationOptions {root:string;candidate:string;task:string|EvaluationTask;timeoutMs?:number;agent?:{name:string;version?:string}}
