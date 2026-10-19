@@ -8,7 +8,7 @@
       "repository": "zof-evidence-spec",
       "artifact": "zofai-evidence-spec-0.1.0.tgz",
       "url": "https://github.com/Zof-AI/zof-evidence-spec/releases/download/v0.1.0/zofai-evidence-spec-0.1.0.tgz",
-      "sha256": "d3d83c1335b801d155d17d3dc3cafd777a55f986d7a9f6023d90513970245ba5",
+      "sha256": "94dffbef977c91f19828200631d889c19bc28aff1fdefcd2b907cb3a1bc9265f",
       "sizeBytes": 25239
     },
     {
@@ -17,7 +17,7 @@
       "repository": "zof-failure-lab",
       "artifact": "zofai-failure-lab-0.1.0.tgz",
       "url": "https://github.com/Zof-AI/zof-failure-lab/releases/download/v0.1.0/zofai-failure-lab-0.1.0.tgz",
-      "sha256": "0791ba204c79d6c0bc97f53d39433cc640cf25b442a0bd35d38d0d7cb3f447bf",
+      "sha256": "de271286ab51ea46fa907e32f2fc5838c1c1111c059df9b4928c69c681ab3d34",
       "sizeBytes": 13567
     },
     {
@@ -26,7 +26,7 @@
       "repository": "zof-reliability-bench",
       "artifact": "zofai-reliability-bench-0.1.0.tgz",
       "url": "https://github.com/Zof-AI/zof-reliability-bench/releases/download/v0.1.0/zofai-reliability-bench-0.1.0.tgz",
-      "sha256": "dca077de87cb71f00e8818708ea160a15132c94de188b453e36bfca3b2b58f4d",
+      "sha256": "881ad2a5d29f97a1e06eaa4658d022bdb872783d9a4b70c8accd0e3db14954d6",
       "sizeBytes": 11773
     }
   ]
