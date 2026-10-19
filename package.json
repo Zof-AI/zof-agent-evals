@@ -1,5 +1,5 @@
 {
-  "name": "@zofai/agent-evals",
+  "name": "@zof-ai/agent-evals",
   "version": "0.1.0",
   "description": "Constrained local Docker evaluation of untrusted JavaScript candidates",
   "type": "module",
@@ -57,7 +57,7 @@
     "@types/node": "22.19.11"
   },
   "dependencies": {
-    "@zofai/evidence-spec": "0.1.0",
-    "@zofai/reliability-bench": "0.1.0"
+    "@zof-ai/evidence-spec": "0.1.0",
+    "@zof-ai/reliability-bench": "0.1.0"
   }
 }

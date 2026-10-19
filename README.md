@@ -1,6 +1,6 @@
 # Zof Agent Evaluations
 
-Evaluate a JavaScript candidate snapshot against explicit input/output tests in a constrained **local Docker container**. Candidate output is compared in the parent process; reports include test outcomes and fixed reason codes, never raw output or logs. Three public task definitions come from `@zofai/reliability-bench` and results use Evidence 1.0.0.
+Evaluate a JavaScript candidate snapshot against explicit input/output tests in a constrained **local Docker container**. Candidate output is compared in the parent process; reports include test outcomes and fixed reason codes, never raw output or logs. Three public task definitions come from `@zof-ai/reliability-bench` and results use Evidence 1.0.0.
 
 Version 0.1.0 is prepared under the Apache-2.0 license. Use the GitHub source installation below; npm registry publication is not claimed.
 
@@ -22,7 +22,7 @@ npm test
 
 The bootstrap downloads only the exact `v0.1.0` dependency assets from [GitHub Releases](https://github.com/Zof-AI/zof-agent-evals/releases), as listed in `scripts/release-dependencies.json`, verifies SHA256 and byte size, and adds them to the npm cache. It does not extract archives, run package scripts, collect application data, or send credentials. Downloads require the explicit flag and follow only HTTPS GitHub asset redirects. Installation then fetches ordinary third-party dependencies from npm. Use a writable npm cache; set `npm_config_cache` consistently for both commands if needed. An unavailable asset, changed hash, or oversized response stops installation.
 
-GitHub source and release artifacts are the initial distribution channel. These instructions do not claim that `@zofai` packages are published on npm or that the VS Code extension is listed in Marketplace.
+GitHub source and release artifacts are the initial distribution channel. These instructions do not claim that `@zof-ai` packages are published on npm or that the VS Code extension is listed in Marketplace.
 <!-- ZOF_RELEASE_INSTALL_END -->
 
 ## Three examples

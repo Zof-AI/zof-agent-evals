@@ -1,4 +1,4 @@
-import assert from 'node:assert/strict';import {mkdtemp,writeFile,rm,mkdir} from 'node:fs/promises';import path from 'node:path';import {tmpdir} from 'node:os';import {evaluateCandidate} from '../dist/index.js';import {validateEvidence} from '@zofai/evidence-spec';
+import assert from 'node:assert/strict';import {mkdtemp,writeFile,rm,mkdir} from 'node:fs/promises';import path from 'node:path';import {tmpdir} from 'node:os';import {evaluateCandidate} from '../dist/index.js';import {validateEvidence} from '@zof-ai/evidence-spec';
 const root=await mkdtemp(path.join(tmpdir(),'zof-eval-acceptance-'));const single={version:'1.0.0',id:'single-case',description:'Return expected value',cases:[{name:'answer',input:0,expected:42}]};
 try{
  const correct=await evaluateCandidate({root:'examples',candidate:'correct.mjs',task:'deduplicate-payments',agent:{name:'token=synthetic-agent'}});assert.equal(correct.evidence.execution.result,'pass');assert.equal(correct.outcomes.length,3);assert.doesNotMatch(JSON.stringify(correct),/synthetic-agent/);

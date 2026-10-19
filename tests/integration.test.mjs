@@ -1,4 +1,4 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {evaluateCandidate} from '../dist/index.js';import {validateEvidence} from '@zofai/evidence-spec';
+import test from 'node:test';import assert from 'node:assert/strict';import {evaluateCandidate} from '../dist/index.js';import {validateEvidence} from '@zof-ai/evidence-spec';
 import {mkdtemp,symlink,rm} from 'node:fs/promises';import {tmpdir} from 'node:os';import path from 'node:path';import {execFileSync} from 'node:child_process';
 test('absent Docker is missing evidence, never a pass',async()=>{
  const previous=process.env.PATH;const python=execFileSync('python3',['-I','-S','-c','import sys; print(sys.executable)'],{encoding:'utf8'}).trim();
