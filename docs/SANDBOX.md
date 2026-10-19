@@ -4,7 +4,7 @@ Candidate code runs only inside the locally available pinned image:
 
 `node@sha256:43ac6c60b8f89723f746e8a92ce91abd5017e627ce1ddfe4238355d3a30b772c`
 
-The image is the Node 22 slim reference used for this release candidate. Image availability must be arranged explicitly by an authorized operator. No automatic pull or remote Docker endpoint is accepted.
+The image is the Node 22 slim reference used by this release. Image availability must be arranged explicitly by an authorized operator. No automatic pull or remote Docker endpoint is accepted.
 
 Controls: network none, read-only root filesystem, UID/GID 65534, all capabilities dropped, no-new-privileges, Docker's default seccomp profile, PID limit 32, memory/swap 128 MiB, CPU limit 0.5, Node heap 64 MiB, and a 16 MiB noexec/nosuid temporary filesystem. There are no published ports, privileged mode, host PID namespaces, production directories, credential mounts or Docker socket mounts. The only bind mount is the copied task staging directory, read-only.
 
@@ -14,4 +14,4 @@ Candidate stdout/stderr share a 64 KiB limit. Stderr is discarded immediately. S
 
 Docker shares a kernel with its Linux host and is not a complete defense against container-runtime/kernel vulnerabilities. This release demonstrates bounded local isolation for synthetic tasks, not multi-tenant hostile-code hosting. Do not expose it as a public compute service or run it with privileged options. There is no unsafe execution mode. Resource limits apply per process/container; an external service would additionally need server-side global quota/authentication/isolation controls and is not implemented.
 
-Input file reads require a stable caller-controlled source root, reject symlinks/traversal and never fetch URLs. Local Docker daemon access is a prerequisite and is trusted. Windows engine behavior and hosted runner matrices have not been accepted in this local release candidate; measured container acceptance uses local Docker Desktop on macOS with Linux containers.
+Input reads use bounded directory-relative file descriptors, reject symlinks, hard links and traversal, and never fetch URLs. Open descriptors retain their original directory if names change; mutable file contents are not an atomic snapshot. Local Docker daemon access is a trusted prerequisite. Linux/macOS Node 22/24 repository checks run in GitHub-hosted CI; actual container acceptance is measured separately with Docker Desktop on macOS and Linux containers. Windows filesystem and engine behavior are unsupported.
